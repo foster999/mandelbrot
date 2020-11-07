@@ -5,7 +5,12 @@ import matplotlib.pyplot as plt
 def mandelbrot_set(max_iterations: int, magnitude_threshold: float, n: int) -> np.array:
     """
     Calculates a mandelbrot set.
+
     Calculated across x and y axes of -2 to 1 and -1 to 1, respectively.
+    Iterations follow the equation:
+
+    .. math::
+        z_{n+1} = z_{n}^{2} + c
 
     Parameters
     ----------
